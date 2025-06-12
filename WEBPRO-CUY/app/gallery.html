@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery - Java Wonderland</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   
+    <link rel="stylesheet" href="/app/css/gallery.css">
+
+    <!-- jQuery -->
+
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+  
+ <!-- Navbar -->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-primary-gradient shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-uppercase" href="#">Java Wonderland</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav align-items-center">
+        <li class="nav-item"><a class="nav-link " href="Home.html"><i class="fas fa-home me-1"></i>Home</a></li>
+        
+        <li class="nav-item"><a class="nav-link active" href="#"><i class="fas fa-images me-1"></i>Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fas fa-info-circle me-1"></i>About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="reviews.html"><i class="fas fa-comments me-1"></i>Review</a></li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <!-- Animasi Teks Berjalan -->
+  <div id="moving-banner">
+    <span id="running-text">Jelajahi Keindahan Jawa dengan Java Wonderland!</span>
+  </div>
+
+    <!-- Gallery Section -->
+    <div class="container mt-5">
+      <h2 class="text-center mb-4">Pilih Destinasi Anda</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Image 1 -->
+        <div class="col">
+          <div class="card h-100">
+            <a href="/Deskripsi/bromo.html"
+              ><img src="/Componen/gambar bromo.jpeg" class="card-img-top" alt="Bromo"
+            /></a>
+            <div class="card-body">
+              <h5 class="card-title">Bromo</h5>
+              <p>Jawa Timur</p>
+            </div>
+          </div>
+        </div>
+        <!-- Image 2 -->
+        <div class="col">
+          <div class="card h-100">
+            <a href="/Deskripsi/sindoro.html"
+              ><img
+                src="/Componen/gunung-sindoro.jpeg"
+                class="card-img-top"
+                alt="Gunung Sindoro"
+            /></a>
+            <div class="card-body">
+              <h5 class="card-title">Gunung Sindoro</h5>
+              <p>Jawa Tengah</p>
+            </div>
+          </div>
+        </div>
+        <!-- Image 3 -->
+        <div class="col">
+          <div class="card h-100">
+            <a href="/Deskripsi/ijen.html"
+              ><img src="/Componen/kawah ijen.webp" class="card-img-top" alt="Kawah Ijen"
+            /></a>
+            <div class="card-body">
+              <h5 class="card-title">Kawah Ijen</h5>
+              <p>Jawa Timur</p>
+            </div>
+          </div>
+        </div>
+        <!-- Image 4 -->
+        <div class="col">
+          <div class="card h-100">
+            <a href="/Deskripsi/karimunjawa.html"
+              ><img
+                src="/Componen/karimun jawa.webp"
+                class="card-img-top"
+                alt="Karimun Jawa"
+            /></a>
+            <div class="card-body">
+              <h5 class="card-title">Karimun Jawa</h5>
+              <p>Jawa Tengah</p>
+            </div>
+          </div>
+        </div>
+        <!-- Image 5 -->
+        <div class="col">
+          <div class="card h-100">
+            <a href="/Deskripsi/pangandaran.html"
+              ><img
+                src="/Componen/PANGANDARAN.webp"
+                class="card-img-top"
+                alt="Pangandaran"
+            /></a>
+            <div class="card-body">
+              <h5 class="card-title">Pangandaran</h5>
+              <p>Jawa Barat</p>
+            </div>
+          </div>
+        </div>
+        <!-- Image 6 -->
+        <div class="col">
+          <div class="card h-100">
+            <a href="/Deskripsi/anyer.html"
+              ><img src="/Componen/anyer.jpg" class="card-img-top" alt="Pantai Anyer"
+            /></a>
+            <div class="card-body">
+              <h5 class="card-title">Anyer</h5>
+              <p>Banten</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 Java Wonderland. All Rights Reserved.</p>
+    </footer>
+  
+    <script>
+        $(document).ready(function () {
+        function animateCar() {
+          $("#moving-car").css("left", "-100px").animate(
+            {
+              left: "100%"
+            },
+            5000,
+            "linear",
+            function () {
+              setTimeout(animateCar, 1000); 
+            }
+          );
+        }
+        animateCar(); 
+      });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+  </body>
+</html>
